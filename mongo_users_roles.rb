@@ -3,6 +3,9 @@
 # This script extracts users and roles from a
 # json mongo dump and generates a CSV output
 #
+# Extract: mongo admin [ -u mongoadmin ] --eval 'db.getUsers()' --quiet > system.users.json
+# Execute: mongousers_roles.rb system.users.json
+#
 # Wed May 29 12:01:44 CEST 2019 - hanr
 #
 require 'rubygems'
